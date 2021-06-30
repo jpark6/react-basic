@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Subject from "./Components/Subject"
+import TOC from "./Components/TOC"
+import Content from "./Components/Content"
 
-function App() {
+/**
+ * App Component
+ * @returns {JSX.Element}
+ * @constructor
+ */
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Subject title="Web" sub="Header!!"/>
+      <Subject title="React" sub="Awesome"/>
+      <TOC />
+      <Content title="HTML" desc="HTML is HyperText Markup Language."/>
+      <Content title="CSS" desc="CSS is Cascading Style Sheet"/>
+      <Content title="JavaScript" desc="JavaScript is Awesome"/>
     </div>
   );
 }
-
-export default App;
