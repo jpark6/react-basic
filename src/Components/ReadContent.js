@@ -1,4 +1,3 @@
-
 /**
  * @param {Object} props - 콘텐츠 props
  * @param {String} props.title - 콘텐츠 제목
@@ -6,7 +5,7 @@
  * @returns {JSX.Element}
  * @constructor
  */
-export default function Content(props) {
+export default function ReadContent(props) {
   return (
     <article id={props.title.toLowerCase()}>
       <h2>{props.title}</h2>
